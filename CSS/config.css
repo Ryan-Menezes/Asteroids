@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+body{
+	background-color: black;
+	font-family: arial;
+}
+#modal{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+}
+#modal main{
+	padding: 20px;
+	width: 400px;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 20px 5px black;
+}
+#modal main #banner{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+#modal main #banner img{
+	width: 100%;
+}
+#modal main #status{
+	align-items: center;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: #ededed;
+	margin-bottom: 10px;
+	border: 1px solid #c7c7c7;
+	display: none;
+}
+#modal main #status div{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	grid-column-gap: 5px;
+}
+#modal main #status div img{
+	width: 30px;
+}
+#modal main button{
+	padding: 10px;
+	border: none;
+	border-radius: 30px;
+	color: white;
+	background-color: #fc2c03;
+	font-weight: bold;
+	cursor: pointer;
+	border: 2px solid #bd1f00;
+	transition-duration: 0.3s;
+}
+#modal main button:hover{
+	background-color: #bd1f00;
+}
