@@ -3,7 +3,7 @@ class Nave extends Rectangle{
 		super(x, y, size, size, img)
 
 		this.angle = 0
-		this.vel = 8
+		this.vel = 5
 		this.player = player
 		this.sound = sound
 		this.invincible = false
